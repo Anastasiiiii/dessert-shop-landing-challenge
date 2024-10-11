@@ -2,21 +2,32 @@ import React, {useState} from "react";
 import "../styles/Card.css";
 
 
-const Card = ({img, name, description, price}) => {
+const Card = ({img, name, description, price, updateTotalQuantity}) => {
     const [quantity, setQuantiy] = useState(0);
     const [inCart, setInCart] = useState(false);
 
     const increment = () => {
-        setQuantiy((prevQuantity) => prevQuantity + 1);
+        setQuantiy((prevQuantity) => {
+            const newQuantity = prevQuantity + 1;
+            updateTotalQuantity(1);
+            return newQuantity;
+        });
     }
 
     const decrement = () => {
-        setQuantiy((prevQuantity) => (prevQuantity > 0 ? prevQuantity - 1 : 0));
+        setQuantiy((prevQuantity) => {
+            const newQuantity = prevQuantity > 0 ? prevQuantity - 1 : 0;
+            if(prevQuantity > 0){
+                updateTotalQuantity(-1);
+            }
+            return newQuantity;
+        });
     }
 
     const handleAddToCart = () => {
         setInCart(true);
         setQuantiy(1);
+        updateTotalQuantity(1);
     }
 
     const addToCartIcon = (

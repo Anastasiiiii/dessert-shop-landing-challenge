@@ -1,0 +1,46 @@
+.cart-box{
+    width: 500px;
+    height: inherit;
+    border: 1px solid white;
+    border-radius: 30px;
+    background-color: white;
+}
+.cart-box h1 {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 850;
+    font-style: normal;
+    color: hsl(14, 86%, 42%);
+    margin: 10px;
+    padding: 20px;
+}
+
+.delivery-info{
+    display: block;
+    margin: 20px auto;
+    width: 400px;
+    height: 50px;
+    background-color: hsl(13, 31%, 94%);
+    border: none;
+    border-radius: 10px;
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    text-align: center;
+    padding-top: 3px;
+}
+
+.confirm-button{
+    display: block;
+    margin: 20px auto;
+    width: 250px;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    background-color: hsl(14, 86%, 42%);
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+

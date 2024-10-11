@@ -2,6 +2,8 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 16px;
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
     text-align: left;
     background-color: hsl(20, 50%, 98%);
 }
@@ -21,7 +23,9 @@
     bottom: -15px;             
     left: 50%;                
     transform: translate(-50%, 0); 
-    width: 150px;              
+    width: 150px;  
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;            
     font-size: small; 
     font-weight: bold;
     text-align: center;
