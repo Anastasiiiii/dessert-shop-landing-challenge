@@ -1,8 +1,23 @@
-import React from "react";
+import React, {useState} from "react";
 import "../styles/Card.css";
 
 
 const Card = ({img, name, description, price}) => {
+    const [quantity, setQuantiy] = useState(0);
+    const [inCart, setInCart] = useState(false);
+
+    const increment = () => {
+        setQuantiy((prevQuantity) => prevQuantity + 1);
+    }
+
+    const decrement = () => {
+        setQuantiy((prevQuantity) => (prevQuantity > 0 ? prevQuantity - 1 : 0));
+    }
+
+    const handleAddToCart = () => {
+        setInCart(true);
+        setQuantiy(1);
+    }
 
     const addToCartIcon = (
         <svg
@@ -28,7 +43,18 @@ const Card = ({img, name, description, price}) => {
         <div className="dish-card">
             <div className="img-container">
                 <img className="img-of-the-dish" src={img} alt="dish" />
-                <button className="add-to-cart-button">{addToCartIcon} Add to Cart</button>
+                {/* Button with add to cart function and controling quantity button */}
+                {inCart ? (
+                    <div className="add-to-cart-button" id="quantity-controls">
+                        <button className="quantity-button" id="decrement" onClick={decrement}>-</button>
+                        <span>{quantity}</span>
+                        <button className="quantity-button" id="increment" onClick={increment}>+</button>
+                    </div>
+                ) : (
+                    <button className="add-to-cart-button" onClick={handleAddToCart}>
+                        {addToCartIcon} Add to Cart
+                    </button>
+                )}
             </div>
             <div>
                 <p>{name}</p>
