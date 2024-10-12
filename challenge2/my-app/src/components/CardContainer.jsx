@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Card from "./Card";
+import CartBox from "./CartBox";
 import "../styles/CardContainer.css";
 import waffleImg from '../assets/images/image-waffle-desktop.jpg';
 import cremeBruleImg from "../assets/images/image-creme-brulee-desktop.jpg";
@@ -86,7 +87,7 @@ const CardContainer = () => {
 
     ))}
     <div>
-      <h3>Total Dishes in Cart: {totalQuantity}</h3>
+      <CartBox quantity={totalQuantity}/>
     </div>
   </div>
 

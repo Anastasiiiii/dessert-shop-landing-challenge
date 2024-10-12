@@ -14,7 +14,8 @@
 
 .img-of-the-dish{
     width: 100%;
-    height: auto;
+    height: 502px;
+    object-fit: cover;
     border-radius: 8px;
 }
 
