@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import "../styles/Card.css";
 
 
-const Card = ({imgSmall, imgMedium, imgLarge, name, description, price, updateTotalQuantity}) => {
+const Card = ({img, name, description, price, updateTotalQuantity, handleChoosing, addSelectedDish}) => {
     const [quantity, setQuantiy] = useState(0);
     const [inCart, setInCart] = useState(false);
 
@@ -25,9 +25,13 @@ const Card = ({imgSmall, imgMedium, imgLarge, name, description, price, updateTo
     }
 
     const handleAddToCart = () => {
+        const dish = {img, name, description, price, quantity: 1};
         setInCart(true);
         setQuantiy(1);
         updateTotalQuantity(1);
+        handleChoosing(true);
+        console.log(handleChoosing);
+        addSelectedDish(dish);
     }
 
     const addToCartIcon = (
@@ -53,11 +57,7 @@ const Card = ({imgSmall, imgMedium, imgLarge, name, description, price, updateTo
     return(
         <div className="dish-card">
             <div className="img-container">
-                <picture>
-                    <source srcSet={imgLarge} media="(min-width: 1024)" />
-                    <source srcSet={imgMedium} media="(min-width: 768)" />
-                    <img className="img-of-the-dish" src={imgSmall} alt={name} />
-                </picture>
+                <img className="img-of-the-dish" style={inCart ? { border: '3px solid hsl(14, 86%, 42%)' } : {}} src={img} alt="dish" />
                 {/* Button with add to cart function and controling quantity button */}
                 {inCart ? (
                     <div className="add-to-cart-button" id="quantity-controls">

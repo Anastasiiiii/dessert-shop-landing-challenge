@@ -1,5 +1,5 @@
 .cart-box{
-    width: 500px;
+    width: 400px;
     height: inherit;
     border: 1px solid white;
     border-radius: 30px;
@@ -18,7 +18,7 @@
 .delivery-info{
     display: block;
     margin: 20px auto;
-    width: 400px;
+    width: 300px;
     height: 50px;
     background-color: hsl(13, 31%, 94%);
     border: none;
@@ -46,5 +46,18 @@
 
 .total-order-text{
     margin-left: 30px;
+}
+
+.chosen-element{
+    display: block;
+    margin: 20px auto;
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    text-align: center;
+    padding-top: 3px;
 }
 
