@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import "../styles/Card.css";
 
 
-const Card = ({img, name, description, price, updateTotalQuantity}) => {
+const Card = ({imgSmall, imgMedium, imgLarge, name, description, price, updateTotalQuantity}) => {
     const [quantity, setQuantiy] = useState(0);
     const [inCart, setInCart] = useState(false);
 
@@ -53,7 +53,11 @@ const Card = ({img, name, description, price, updateTotalQuantity}) => {
     return(
         <div className="dish-card">
             <div className="img-container">
-                <img className="img-of-the-dish" src={img} alt="dish" />
+                <picture>
+                    <source srcSet={imgLarge} media="(min-width: 1024)" />
+                    <source srcSet={imgMedium} media="(min-width: 768)" />
+                    <img className="img-of-the-dish" src={imgSmall} alt={name} />
+                </picture>
                 {/* Button with add to cart function and controling quantity button */}
                 {inCart ? (
                     <div className="add-to-cart-button" id="quantity-controls">
