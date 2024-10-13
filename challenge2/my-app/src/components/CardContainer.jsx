@@ -13,24 +13,25 @@ import redValvetCakeImg from "../assets/images/image-cake-desktop.jpg";
 import saltedCaramelBrownie from "../assets/images/image-brownie-desktop.jpg";
 import pannaCottaImg from "../assets/images/image-panna-cotta-desktop.jpg";
 
-
-
 const CardContainer = () => {
   const [totalQuantity, setTotalQuantity] = useState(0);
-  const [choosing, setChoosing] = useState(false);
-  const [selectedDishes, setSelectedDishes] = useState([]);
+  const [cartItems, setCartItems] = useState({});
 
   const updateTotalQuantity = (amount) => {
     setTotalQuantity((prevTotal) => prevTotal + amount);
-  }
+  };
 
-  const handleChoosing = (isChoosing) => {
-    setChoosing(isChoosing);
-  }
-
-  const addSelectedDish = (dish) => {
-    setSelectedDishes((prevDishes) => [...prevDishes, dish]);
-  }
+  const toggleInCart = (name, inCart) => {
+    setCartItems((prevItems) => {
+      const updatedItems = { ...prevItems };
+      if (inCart) {
+        updatedItems[name] = true;
+      } else {
+        delete updatedItems[name];
+      }
+      return updatedItems;
+    });
+  };
 
   const cardsData = [
     {
@@ -88,27 +89,40 @@ const CardContainer = () => {
       price: "$6.50",
     },
   ];
-  return <div className="total-container">
-    <div className="card-container">
-    {cardsData.map((data, index) => (
-      <Card
-        key={index}
-        img={data.img}
-        name={data.name}
-        description={data.description}
-        price={data.price}
-        updateTotalQuantity={updateTotalQuantity}
-        handleChoosing = {handleChoosing}
-        addSelectedDish={addSelectedDish}
-      />
 
-    ))}
+  return (
+    <div className="total-container">
+      <div className="card-container">
+        {cardsData.map((data, index) => (
+          <Card
+            key={index}
+            img={data.img}
+            name={data.name}
+            description={data.description}
+            price={data.price}
+            updateTotalQuantity={updateTotalQuantity}
+            toggleInCart={toggleInCart}
+            inCart={!!cartItems[data.name]}
+          />
+        ))}
+      </div>
+      <div className="cart-box-total">
+        <CartBox quantity={totalQuantity} />
+      </div>
+      <div>
+        {Object.keys(cartItems).length > 0 ? ( // Check if there are items in the cart
+          <div>
+            <h2>Items in Cart:</h2>
+            <ul>
+              {Object.keys(cartItems).map((item) => (
+                <li key={item}>{item}</li> // Display each item name
+              ))}
+            </ul>
+          </div>
+        ) : null}
+      </div>
     </div>
-    <div className="cart-box-total">
-      <CartBox quantity={totalQuantity} isChossing={choosing} selectedDishes />
-    </div>   
-  </div>
-
-}
+  );
+};
 
 export default CardContainer;
