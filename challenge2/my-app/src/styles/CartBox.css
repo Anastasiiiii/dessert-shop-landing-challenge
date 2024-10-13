@@ -61,3 +61,13 @@
     padding-top: 3px;
 }
 
+.cart-added-items {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.cart-added-items h4 {
+    margin-left: 30px;
+    color: hsl(15, 9%, 18%);
+}
+

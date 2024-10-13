@@ -23,14 +23,10 @@ const Card = ({ img, name, description, price, updateTotalQuantity, toggleInCart
     };
 
     const handleAddToCart = () => {
+        const dish = {name, description, price, quantity: 1};
         setQuantity(1);
         updateTotalQuantity(1);
-        toggleInCart(name, true);
-    };
-
-    const handleRemoveFromCart = () => {
-        toggleInCart(name, false);
-        setQuantity(0); // Reset quantity when removed from cart
+        toggleInCart(name, true, 1);
     };
 
     const addToCartIcon = (
@@ -56,7 +52,6 @@ const Card = ({ img, name, description, price, updateTotalQuantity, toggleInCart
                         <button className="quantity-button" id="decrement" onClick={decrement}>-</button>
                         <span>{quantity}</span>
                         <button className="quantity-button" id="increment" onClick={increment}>+</button>
-                        <button className="remove-button" onClick={handleRemoveFromCart}>Remove</button> {/* Add remove button */}
                     </div>
                 ) : (
                     <button className="add-to-cart-button" onClick={handleAddToCart}>
