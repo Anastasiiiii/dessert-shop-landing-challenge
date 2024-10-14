@@ -36,6 +36,14 @@ const CardContainer = () => {
     });
   };
 
+  const removeItem = (name) => {
+    setCartItems((prevItems) => {
+      const updatedItems = { ...prevItems };
+      delete updatedItems[name];
+      return updatedItems;
+    })
+  }
+
   const cardsData = [
     {
       img: waffleImg,
@@ -110,9 +118,9 @@ const CardContainer = () => {
         ))}
       </div>
       <div className="cart-box-total">
-        <CartBox quantity={totalQuantity} cartItems={cartItems}/>
+        <CartBox quantity={totalQuantity} cartItems={cartItems} removeItem={removeItem} />
       </div>
-      
+
     </div>
   );
 };

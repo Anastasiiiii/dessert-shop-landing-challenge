@@ -16,7 +16,8 @@
 }
 
 .delivery-info{
-    display: block;
+    display: flex;
+    align-items: center;
     margin: 20px auto;
     width: 300px;
     height: 50px;
@@ -27,6 +28,7 @@
     font-optical-sizing: auto;
     text-align: center;
     padding-top: 3px;
+    padding-left: 60px;
 }
 
 .confirm-button{
@@ -45,7 +47,10 @@
 }
 
 .total-order-text{
-    margin-left: 30px;
+    margin: 30px;
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    color: hsl(14, 65%, 9%);
 }
 
 .chosen-element{
@@ -65,9 +70,58 @@
     font-family: "Red Hat Text", sans-serif;
     font-optical-sizing: auto;
 }
-
-.cart-added-items h4 {
+.added-to-cart-dish {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
     margin-left: 30px;
-    color: hsl(15, 9%, 18%);
+    margin-right: 30px;
+    border-bottom: 1px solid hsl(14, 25%, 72%);
 }
 
+.cart-added-items h4 {
+    color: hsl(14, 65%, 9%);
+}
+
+.added-to-cart-dish p {
+    margin-top: -10px;
+    color: hsl(12, 20%, 44%);
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-size: smaller;
+    flex: 1;
+}
+
+.total-order-sum{
+    margin-left: 180px;
+    font-weight: 800;
+    font-size: larger;
+}
+
+.quantity {
+    color: hsl(14, 86%, 42%); 
+    font-weight: 600; 
+    margin-right: 15px;
+}
+
+.dish-elements-function {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    margin-top: 5px;
+}
+
+.remove-button {
+    cursor: pointer;
+    padding: 2px;
+    margin-bottom: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    border: 1px solid hsl(14, 25%, 72%);
+    background-color: transparent;
+}
+
+.remove-button:hover {
+    background-color: hsl(14, 86%, 32%);
+}
