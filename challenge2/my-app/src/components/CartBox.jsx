@@ -2,19 +2,29 @@ import React, { useState } from "react";
 import "../styles/CartBox.css";
 
 const CartBox = ({ quantity, cartItems }) => {
+    const calculateTotalOrder = () => {
+        return Object.keys(cartItems).reduce((total, item) => {
+            const itemQuantity = cartItems[item].quantity;
+            const itemPrice = parseFloat(cartItems[item].price.replace("$", ""));
+            return total + itemQuantity * itemPrice;
+        }, 0);
+    }
+
+    const totalOrder = calculateTotalOrder();
+
     return (
-        <div className="cart-box">
+        <div className="cart-box"> 
             <h1>Your Cart&#40;{quantity}&#41;</h1>
             <div>
                 {Object.keys(cartItems).length > 0 ? ( // Check if there are items in the cart
                     <div className="cart-added-items">
                             {Object.keys(cartItems).map((item) => (
-                                <h4 key={item}>{item}(Quantity: {cartItems[item]})</h4> // Display each item name    
+                                <h4 key={item}>{item}(Quantity: {cartItems[item].quantity})(Price: {cartItems[item].price})</h4> // Display each item name    
                             ))}
                     </div>
                 ) : null}
             </div>
-            <p className="total-order-text"> Order Total: {quantity}</p>
+            <p className="total-order-text"> Order Total: ${totalOrder.toFixed(2)}</p>
             <div className="delivery-info">
                 <p>This is carbon-neutral delivery</p>
             </div>

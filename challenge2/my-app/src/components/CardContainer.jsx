@@ -21,11 +21,14 @@ const CardContainer = () => {
     setTotalQuantity((prevTotal) => prevTotal + amount);
   };
 
-  const toggleInCart = (name, inCart, quantity) => {
+  const toggleInCart = (name, inCart, quantity, price) => {
     setCartItems((prevItems) => {
       const updatedItems = { ...prevItems };
       if (inCart) {
-        updatedItems[name] = (updatedItems[name] || 0) + quantity;
+        updatedItems[name] = {
+          quantity: (updatedItems[name]?.quantity || 0) + quantity,
+          price
+        };
       } else {
         delete updatedItems[name];
       }
