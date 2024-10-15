@@ -254,7 +254,7 @@
     color: hsl(12, 20%, 44%);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
     .cart-box {
         width: 300px;
         margin: 10px 40px;
