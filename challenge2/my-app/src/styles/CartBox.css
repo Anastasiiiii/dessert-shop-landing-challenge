@@ -142,7 +142,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     width: 300px;
-    height: 200px;
+    
     background-color: white;
     text-align: center;
     font-family: "Red Hat Text", sans-serif;
@@ -162,6 +162,91 @@
 .img-of-confirmed-order {
     width: 15%;
     height: 15%;
+    margin-right: 0;
+}
+
+.confirmed-dishes-container {
+    background-color: hsl(13, 31%, 94%);
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+
+.confirmed-dishes-block {
+    display: flex; /* Align items in a row */
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Center elements vertically */
+    margin-bottom: 10px; /* Add some spacing between rows */
+    border-bottom: 1px solid hsl(14, 25%, 72%);
+    padding-bottom: 5px;
+}
+
+.price-info {
+    display: flex;
+    flex-direction: column;
+    margin-right: 110px;
+    text-align: left;
+}
+
+.item-name {
+    font-size: xx-small;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.quantity {
+    font-size: xx-small;
+    font-weight: bold;
+    color: hsl(14, 86%, 42%);
+    line-height: 1;
+}
+
+.quantity span{
+    font-weight: lighter;
+    color: hsl(14, 65%, 9%);
+}
+
+.dish-total {
+    font-size: x-small;
+    font-weight: bold;
+}
+
+.total-confirmed-order-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.total-confirmed-order-text{
+    font-size: xx-small;
+    color: hsl(14, 65%, 9%);
+}
+
+.total-confirmed-order-sum{
+    font-weight: 800;
+    font-size: small;
+}
+
+.start-new-order-button{
+    width: 300px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    background-color: hsl(14, 86%, 42%);
+    font-family: "Red Hat Text", sans-serif;
+    color: white;
+    font-size: x-small;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.empty-cart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+    color: hsl(12, 20%, 44%);
 }
 
 @media (max-width: 375px) {
