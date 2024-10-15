@@ -185,7 +185,7 @@
     padding-bottom: 5px;
 }
 
-.price-info {
+.price-info-small {
     display: flex;
     flex-direction: column;
     margin-right: 110px;
@@ -198,14 +198,14 @@
     margin-bottom: 0;
 }
 
-.quantity {
+.quantity-small {
     font-size: xx-small;
     font-weight: bold;
     color: hsl(14, 86%, 42%);
     line-height: 1;
 }
 
-.quantity span {
+.quantity-small span {
     font-weight: lighter;
     color: hsl(14, 65%, 9%);
 }
@@ -368,6 +368,10 @@
 
     .confirmed-dishes-container::-webkit-scrollbar-thumb:hover {
         background-color: hsl(7, 20%, 60%);
+    }
+
+    #cart-quantity {
+        font-size: 30px;
     }
 
 }
