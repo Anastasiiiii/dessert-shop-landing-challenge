@@ -52,6 +52,7 @@
     vertical-align: middle;    
     position: relative;          
     top: -2px;  
+    color: hsl(14, 65%, 9%);
 }
 
 .quantity-controls {
@@ -80,4 +81,16 @@
     width: 130px;
     color: white;
     border-radius: 40px;
+}
+
+.description-elements{
+    margin-top: 30px;
+    color: hsl(14, 65%, 9%);
+}
+.description-elements p {
+    margin: 7px;
+}
+
+.bold-text {
+    font-weight: bold;
 }

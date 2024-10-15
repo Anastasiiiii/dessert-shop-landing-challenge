@@ -80,10 +80,11 @@ const CartBox = ({ quantity, cartItems, removeItem }) => {
                             <span>{neutralCarbonIcon}</span>
                             <p style={{ marginLeft: '10px' }}>This is carbon-neutral delivery</p>
                         </div>
+                        {/*Popup window */}
                         <Popup trigger={<button className="confirm-button">Confirm Order</button>} position="right center">
                             <div className="popup-overlay"></div>
                             <div className="pop-up-window-container">
-                                <div>
+                                <div className="total-confirmed-header">
                                     <span className="confirmed-order-icon">{orderConfirmedIcon}</span>
                                     <h1>Order Confirmed</h1>
                                     <p>We hope you enjoy your food!</p>
@@ -127,7 +128,6 @@ const CartBox = ({ quantity, cartItems, removeItem }) => {
                     </div>
                 )}
             </div>
-
         </div>
     )
 

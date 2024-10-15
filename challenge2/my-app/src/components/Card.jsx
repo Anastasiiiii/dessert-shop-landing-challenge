@@ -60,11 +60,12 @@ const Card = ({ img, name, description, price, updateTotalQuantity, toggleInCart
                     </button>
                 )}
             </div>
-            <div>
-                <p>{name}</p>
-                <p>{description}</p>
-                <p>{price}</p>
+            <div className="description-elements">
+                <p style={{ color: 'hsl(12, 20%, 44%)', fontSize: 'small' }}>{name}</p>
+                <p className="bold-text">{description}</p>
+                <p className="bold-text" style={{ color: 'hsl(14, 86%, 42%)' }}>{price}</p>
             </div>
+
         </div>
     );
 };
