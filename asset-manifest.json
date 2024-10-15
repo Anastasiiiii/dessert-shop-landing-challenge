@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Anastasiiiii/Challenges/tree/303b99829f8bf016b2ea08abccac50d03aef6bc1/challenge2/my-app/static/css/main.36d7ea40.css",
+    "main.js": "/Anastasiiiii/Challenges/tree/303b99829f8bf016b2ea08abccac50d03aef6bc1/challenge2/my-app/static/js/main.33ebedc9.js",
+    "static/js/453.ed3810f9.chunk.js": "/Anastasiiiii/Challenges/tree/303b99829f8bf016b2ea08abccac50d03aef6bc1/challenge2/my-app/static/js/453.ed3810f9.chunk.js",
+    "static/media/image-baklava-desktop.jpg": "/Anastasiiiii/Challenges/tree/303b99829f8bf016b2ea08abccac50d03aef6bc1/challenge2/my-app/static/media/image-baklava-desktop.5b02a4218c362c27159f.jpg",
+    "static/media/image-meringue-desktop.jpg": "/Anastasiiiii/Challenges/tree/303b99829f8bf016b2ea08abccac50d03aef6bc1/challenge2/my-app/static/media/image-meringue-desktop.6d5a8b83ed37ed53abe8.jpg",
+    "static/media/image-tiramisu-desktop.jpg": "/Anastasiiiii/Challenges/tree/303b99829f8bf016b2ea08abccac50d03aef6bc1/challenge2/my-app/static/media/image-tiramisu-desktop.a413682ad9acd6ac990f.jpg",
+    "static/media/image-waffle-desktop.jpg": "/Anastasiiiii/Challenges/tree/303b99829f8bf016b2ea08abccac50d03aef6bc1/challenge2/my-app/static/media/image-waffle-desktop.5a6efb9333e3adb9132a.jpg",
+    "static/media/image-brownie-desktop.jpg": "/Anastasiiiii/Challenges/tree/303b99829f8bf016b2ea08abccac50d03aef6bc1/challenge2/my-app/static/media/image-brownie-desktop.125629d2dd60b4a505eb.jpg",
+    "static/media/image-cake-desktop.jpg": "/Anastasiiiii/Challenges/tree/303b99829f8bf016b2ea08abccac50d03aef6bc1/challenge2/my-app/static/media/image-cake-desktop.c752ae7e75ba7be8938e.jpg",
+    "static/media/image-creme-brulee-desktop.jpg": "/Anastasiiiii/Challenges/tree/303b99829f8bf016b2ea08abccac50d03aef6bc1/challenge2/my-app/static/media/image-creme-brulee-desktop.cf0f17663b62a68ddea1.jpg",
+    "static/media/image-macaron-desktop.jpg": "/Anastasiiiii/Challenges/tree/303b99829f8bf016b2ea08abccac50d03aef6bc1/challenge2/my-app/static/media/image-macaron-desktop.f038d45dd6f196ab3814.jpg",
+    "static/media/image-panna-cotta-desktop.jpg": "/Anastasiiiii/Challenges/tree/303b99829f8bf016b2ea08abccac50d03aef6bc1/challenge2/my-app/static/media/image-panna-cotta-desktop.98170b01a4f07f1271a2.jpg",
+    "index.html": "/Anastasiiiii/Challenges/tree/303b99829f8bf016b2ea08abccac50d03aef6bc1/challenge2/my-app/index.html",
+    "main.36d7ea40.css.map": "/Anastasiiiii/Challenges/tree/303b99829f8bf016b2ea08abccac50d03aef6bc1/challenge2/my-app/static/css/main.36d7ea40.css.map",
+    "main.33ebedc9.js.map": "/Anastasiiiii/Challenges/tree/303b99829f8bf016b2ea08abccac50d03aef6bc1/challenge2/my-app/static/js/main.33ebedc9.js.map",
+    "453.ed3810f9.chunk.js.map": "/Anastasiiiii/Challenges/tree/303b99829f8bf016b2ea08abccac50d03aef6bc1/challenge2/my-app/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.36d7ea40.css",
+    "static/js/main.33ebedc9.js"
+  ]
+}
