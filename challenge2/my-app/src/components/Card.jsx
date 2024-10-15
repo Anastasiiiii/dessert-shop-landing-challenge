@@ -8,7 +8,7 @@ const Card = ({ img, name, description, price, updateTotalQuantity, toggleInCart
         setQuantity((prevQuantity) => {
             const newQuantity = prevQuantity + 1;
             updateTotalQuantity(1);
-            toggleInCart(name, true, 1, price);
+            toggleInCart(name, true, 1, price, img);
             return newQuantity;
         });
     };
@@ -17,7 +17,7 @@ const Card = ({ img, name, description, price, updateTotalQuantity, toggleInCart
         setQuantity((prevQuantity) => {
             if (prevQuantity > 0) {
                 updateTotalQuantity(-1);
-                toggleInCart(name, true, -1, price);
+                toggleInCart(name, true, -1, price, img);
                 return prevQuantity - 1;
             }
             return prevQuantity;
@@ -27,7 +27,7 @@ const Card = ({ img, name, description, price, updateTotalQuantity, toggleInCart
     const handleAddToCart = () => {
         setQuantity(1);
         updateTotalQuantity(1);
-        toggleInCart(name, true, 1, price);
+        toggleInCart(name, true, 1, price, img);
     };
 
     const addToCartIcon = (
