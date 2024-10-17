@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Challenges/static/css/main.6f636727.css",
+    "main.css": "/Challenges/static/css/main.638602e3.css",
     "main.js": "/Challenges/static/js/main.f9b50cd2.js",
     "static/js/453.c8bf0f0b.chunk.js": "/Challenges/static/js/453.c8bf0f0b.chunk.js",
     "static/media/image-baklava-desktop.jpg": "/Challenges/static/media/image-baklava-desktop.5b02a4218c362c27159f.jpg",
@@ -13,12 +13,12 @@
     "static/media/image-macaron-desktop.jpg": "/Challenges/static/media/image-macaron-desktop.f038d45dd6f196ab3814.jpg",
     "static/media/image-panna-cotta-desktop.jpg": "/Challenges/static/media/image-panna-cotta-desktop.98170b01a4f07f1271a2.jpg",
     "index.html": "/Challenges/index.html",
-    "main.6f636727.css.map": "/Challenges/static/css/main.6f636727.css.map",
+    "main.638602e3.css.map": "/Challenges/static/css/main.638602e3.css.map",
     "main.f9b50cd2.js.map": "/Challenges/static/js/main.f9b50cd2.js.map",
     "453.c8bf0f0b.chunk.js.map": "/Challenges/static/js/453.c8bf0f0b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f636727.css",
+    "static/css/main.638602e3.css",
     "static/js/main.f9b50cd2.js"
   ]
 }
