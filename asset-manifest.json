@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/Challenges/static/css/main.638602e3.css",
-    "main.js": "/Challenges/static/js/main.f9b50cd2.js",
-    "static/js/453.c8bf0f0b.chunk.js": "/Challenges/static/js/453.c8bf0f0b.chunk.js",
-    "static/media/image-baklava-desktop.jpg": "/Challenges/static/media/image-baklava-desktop.5b02a4218c362c27159f.jpg",
-    "static/media/image-meringue-desktop.jpg": "/Challenges/static/media/image-meringue-desktop.6d5a8b83ed37ed53abe8.jpg",
-    "static/media/image-tiramisu-desktop.jpg": "/Challenges/static/media/image-tiramisu-desktop.a413682ad9acd6ac990f.jpg",
-    "static/media/image-waffle-desktop.jpg": "/Challenges/static/media/image-waffle-desktop.5a6efb9333e3adb9132a.jpg",
-    "static/media/image-brownie-desktop.jpg": "/Challenges/static/media/image-brownie-desktop.125629d2dd60b4a505eb.jpg",
-    "static/media/image-cake-desktop.jpg": "/Challenges/static/media/image-cake-desktop.c752ae7e75ba7be8938e.jpg",
-    "static/media/image-creme-brulee-desktop.jpg": "/Challenges/static/media/image-creme-brulee-desktop.cf0f17663b62a68ddea1.jpg",
-    "static/media/image-macaron-desktop.jpg": "/Challenges/static/media/image-macaron-desktop.f038d45dd6f196ab3814.jpg",
-    "static/media/image-panna-cotta-desktop.jpg": "/Challenges/static/media/image-panna-cotta-desktop.98170b01a4f07f1271a2.jpg",
-    "index.html": "/Challenges/index.html",
-    "main.638602e3.css.map": "/Challenges/static/css/main.638602e3.css.map",
-    "main.f9b50cd2.js.map": "/Challenges/static/js/main.f9b50cd2.js.map",
-    "453.c8bf0f0b.chunk.js.map": "/Challenges/static/js/453.c8bf0f0b.chunk.js.map"
+    "main.css": "/dessert-shop-landing-challenge/static/css/main.6f636727.css",
+    "main.js": "/dessert-shop-landing-challenge/static/js/main.7760f665.js",
+    "static/js/453.e10934fe.chunk.js": "/dessert-shop-landing-challenge/static/js/453.e10934fe.chunk.js",
+    "static/media/image-baklava-desktop.jpg": "/dessert-shop-landing-challenge/static/media/image-baklava-desktop.5b02a4218c362c27159f.jpg",
+    "static/media/image-meringue-desktop.jpg": "/dessert-shop-landing-challenge/static/media/image-meringue-desktop.6d5a8b83ed37ed53abe8.jpg",
+    "static/media/image-tiramisu-desktop.jpg": "/dessert-shop-landing-challenge/static/media/image-tiramisu-desktop.a413682ad9acd6ac990f.jpg",
+    "static/media/image-waffle-desktop.jpg": "/dessert-shop-landing-challenge/static/media/image-waffle-desktop.5a6efb9333e3adb9132a.jpg",
+    "static/media/image-brownie-desktop.jpg": "/dessert-shop-landing-challenge/static/media/image-brownie-desktop.125629d2dd60b4a505eb.jpg",
+    "static/media/image-cake-desktop.jpg": "/dessert-shop-landing-challenge/static/media/image-cake-desktop.c752ae7e75ba7be8938e.jpg",
+    "static/media/image-creme-brulee-desktop.jpg": "/dessert-shop-landing-challenge/static/media/image-creme-brulee-desktop.cf0f17663b62a68ddea1.jpg",
+    "static/media/image-macaron-desktop.jpg": "/dessert-shop-landing-challenge/static/media/image-macaron-desktop.f038d45dd6f196ab3814.jpg",
+    "static/media/image-panna-cotta-desktop.jpg": "/dessert-shop-landing-challenge/static/media/image-panna-cotta-desktop.98170b01a4f07f1271a2.jpg",
+    "index.html": "/dessert-shop-landing-challenge/index.html",
+    "main.6f636727.css.map": "/dessert-shop-landing-challenge/static/css/main.6f636727.css.map",
+    "main.7760f665.js.map": "/dessert-shop-landing-challenge/static/js/main.7760f665.js.map",
+    "453.e10934fe.chunk.js.map": "/dessert-shop-landing-challenge/static/js/453.e10934fe.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.638602e3.css",
-    "static/js/main.f9b50cd2.js"
+    "static/css/main.6f636727.css",
+    "static/js/main.7760f665.js"
   ]
 }
