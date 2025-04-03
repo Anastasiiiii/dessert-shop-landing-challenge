@@ -42,3 +42,6 @@ This is a simple dessert shop landing page built with **React**. Users can brows
 - Real-time total price calculation  
 - Responsive design  
 - Clean and modern UI
+
+## 🙌 Acknowledgements
+Design by Frontend Mentor
